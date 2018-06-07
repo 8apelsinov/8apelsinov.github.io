@@ -123,30 +123,30 @@
     var timerSec = document.querySelector(".timer__sec");
    
   var initializeTimer = function() {
-    var endDate = new Date (2018,7, 7, 9, 13);  // получаем дату истечения таймера. Формат: год-месяц-день-час-минутв-секунда. Справа налево. Месяц задаётся с нуля.
-    var currentDate = new Date(); // получаем текущую дату
-    var seconds = (endDate - currentDate) / 1000; // определяем количество секунд до истечения таймера
+    var endDate = new Date (2018,7, 7, 9, 13);  
+    var currentDate = new Date(); 
+    var seconds = (endDate - currentDate) / 1000; 
     
-    if (seconds > 0) {  // проверка - истекла ли дата обратного отсчета
-      var minutes = seconds/60; // определяем количество минут до истечения таймера
-      var hours = minutes/60; // определяем количество часов до истечения таймера
+    if (seconds > 0) {  
+      var minutes = seconds/60; 
+      var hours = minutes/60; 
       var days = hours/24;
-      minutes = (hours - Math.floor(hours)) * 60; // подсчитываем кол-во оставшихся минут в текущем часе
+      minutes = (hours - Math.floor(hours)) * 60; 
       hours = (days - Math.floor(days)) * 24;
-      hours = Math.floor(hours);  // целое количество часов до истечения таймера
+      hours = Math.floor(hours);  
       days = Math.floor(days);
-      seconds = Math.floor((minutes - Math.floor(minutes)) * 60); // подсчитываем кол-во оставшихся секунд в текущей минуте
-      minutes = Math.floor(minutes); // округляем до целого кол-во оставшихся минут в текущем часе
+      seconds = Math.floor((minutes - Math.floor(minutes)) * 60); 
+      minutes = Math.floor(minutes); 
       
       
-      setTimePage(days, hours, minutes, seconds); // выставляем начальные значения таймера
+      setTimePage(days, hours, minutes, seconds); 
       
       function secOut() {
-        if (seconds == 0) { // если секунду закончились то
-          if (minutes == 0) { // если минуты закончились то
-            if (hours == 0 ) { // если часы закончились то
+        if (seconds == 0) { 
+          if (minutes == 0) { 
+            if (hours == 0 ) { 
               if (days == 0) {
-                timeIsUp(timeId); // выводим сообщение об окончании отсчета
+                timeIsUp(timeId); 
               } else {
                 days--;
                 hours = 23;
@@ -155,20 +155,20 @@
               }
               
             } else {
-              hours--; // уменьшаем кол-во часов
-              minutes = 59; // обновляем минуты
-              seconds = 59;// обновляем секунды
+              hours--; 
+              minutes = 59; 
+              seconds = 59;
             }
           } else {
-            minutes--; // уменьшаем кол-во минут
-            seconds = 59; // обновляем секунды
+            minutes--; 
+            seconds = 59; 
           }
         } else {
-          seconds--; // уменьшаем кол-во секунд
+          seconds--; 
         }
-        setTimePage(days, hours, minutes, seconds); // обновляем значения таймера на странице
+        setTimePage(days, hours, minutes, seconds); 
       }
-      timerId = setInterval(secOut, 1000); // устанавливаем вызов функции через каждую секунду
+      timerId = setInterval(secOut, 1000); 
       
     } else {
         timerDays.innerHTML = 0;
@@ -178,19 +178,19 @@
     }
   }
    
-  function setTimePage(d, h, m, s) { // функция выставления таймера на странице
+  function setTimePage(d, h, m, s) { 
     timerDays.innerHTML = d;
     timerHours.innerHTML = h;
     timerMin.innerHTML = m;
     timerSec.innerHTML = s;
   }
   
-    function timeIsUp(timerId) { // функция, вызываемая по истечению времени
+    function timeIsUp(timerId) {
       timerDays.innerHTML = 0;
       timerHours.innerHTML = 0;
       timerMin.innerHTML = 0;
       timerSec.innerHTML = 0;
-      clearInterval(timerId); // останавливаем вызов функции через каждую секунду
+      clearInterval(timerId); 
     }
 
   window.onload = function() {
