@@ -1,0 +1,205 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width", initial-scale="1">
+  <link href="style.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900&amp;subset=cyrillic" rel="stylesheet">
+  <title>Школа трафика</title>
+  
+</head>
+<body>
+  <main>
+    <section class="intro">
+      <div class="container">
+        <div class="intro__logo">
+          <img src="img/logo.png" width="109" height="30">
+        </div>
+        <span class="intro__title">Видеокурс</span>
+        <span class="intro__name">"Вступление в товарный арбитраж трафика"</span>
+        <span class="intro__text">Получи бесплатный видеокурс по&nbspтоварному арбитражу для новичков</span>
+       <form class="intro__form" action="" method="post">
+          <input type="email" class="intro__email" placeholder="введите ваш e-mail">
+          <button class="intro__button" value="Скачать видео курс">Скачать видео курс</button>
+        </form>
+      </div>
+    </section>
+    
+    <section class="features">
+      <div class="container">
+        <div class="features__wrapper">
+          <div class="features__item">
+            <span class="features__title">Быстро</span>
+            <span class="features__text">вольёшься в нишу интернет&nbspпродаж</span>
+          </div>
+          <div class="features__item">
+            <span class="features__title">Овладеешь</span>
+            <span class="features__text">наиболее выгодной и востребованной профессией 2016&nbspгода</span>
+          </div>
+          <div class="features__item">
+            <span class="features__title">Зарабатывай</span>
+            <span class="features__text">деньги в&nbspлюбой точке&nbspмира</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="author">
+      <div class="container">
+        <div class="author__wrapper">
+          <span class="author__title">Автор видеокурса</span>
+          <span class="author__name">Артур Гарнаев</span>
+          <span class="author__about">Арбитражник, рекламодатель, интернет-предприниматель</span>
+          <span class="author__text">Прокрутил рекламы более чем на 50000$ Ежедневно продаю более 150 физических товаров, притом что трафик на рекламу лью сам!</span>
+        </div>
+      </div>
+    </section>
+    
+    <section class="result">
+      <div class="container">
+        <span class="result__title">После прохождения бесплатного&nbspвидеокурса ты&nbspузнаешь:</span>
+        <div class="result__wrapper">
+          <div class="result__block">
+           <span class="result__number">1</span><span class="result__text">В чём суть арбитража трафика?</span>
+          </div>  
+          <div class="result__block">
+            <span class="result__number">2</span><span class="result__text">Как заработать на&nbspарбитраже трафика?</span>
+          </div>  
+          <div class="result__block">
+             <span class="result__number">3</span><span class="result__text">Сколько можно заработать на товарке?</span>
+          </div>  
+          <div class="result__block">
+            <span class="result__number">4</span><span class="result__text">Как стать арбитражником?</span>
+          </div>  
+          <div class="result__block">
+            <span class="result__number">5</span><span class="result__text">С чего начать?</span>
+          </div>  
+        </div>
+      </div>
+    </section>
+    
+    <section class="bonus">
+      <div class="container">
+        <span class="bonus__title">Скачай видеокурс сейчас</span>
+        <span class="bonus__about">И получи крутой бонус совершенно бесплатно!</span>
+        <span class="bonus__text">Предложение ограничено! Успей!</span>
+        <div class="bonus__timer timer" id="timer">
+          <div class="timer__item">
+            <span class="timer__days timer__unit"></span>
+            <span class="timer__text">дней</span>
+          </div>
+          <div class="timer__item">
+            <span class="timer__hours timer__unit"></span>
+            <span class="timer__text">часов</span>
+          </div>
+          <div class="timer__item">
+            <span class="timer__min timer__unit"></span>
+            <span class="timer__text">минут</span>
+          </div>
+          <div class="timer__item">
+            <span class="timer__sec timer__unit"></span>
+            <span class="timer__text">секунд</span>
+          </div>
+        </div>
+        <form class="bonus__form" action="" method="post">
+          <input type="email" class="bonus__email" placeholder="введите ваш e-mail">
+          <button class="bonus__button">Скачать видео курс</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer">
+    <div class="container">
+      <span class="footer__text"><span class="footer__color-text">"Школа трафика"</span> - школа товарного арбитража трафика Артура Гарнаева (с) 2016</span>
+    </div>
+  </footer>
+  
+  <script>
+  'use strict'
+    var timerDays = document.querySelector(".timer__days");
+    var timerHours = document.querySelector(".timer__hours");
+    var timerMin = document.querySelector(".timer__min");
+    var timerSec = document.querySelector(".timer__sec");
+   
+  var initializeTimer = function() {
+    var endDate = new Date (2018,7, 7, 9, 13);  // получаем дату истечения таймера. Формат: год-месяц-день-час-минутв-секунда. Справа налево. Месяц задаётся с нуля.
+    var currentDate = new Date(); // получаем текущую дату
+    var seconds = (endDate - currentDate) / 1000; // определяем количество секунд до истечения таймера
+    
+    if (seconds > 0) {  // проверка - истекла ли дата обратного отсчета
+      var minutes = seconds/60; // определяем количество минут до истечения таймера
+      var hours = minutes/60; // определяем количество часов до истечения таймера
+      var days = hours/24;
+      minutes = (hours - Math.floor(hours)) * 60; // подсчитываем кол-во оставшихся минут в текущем часе
+      hours = (days - Math.floor(days)) * 24;
+      hours = Math.floor(hours);  // целое количество часов до истечения таймера
+      days = Math.floor(days);
+      seconds = Math.floor((minutes - Math.floor(minutes)) * 60); // подсчитываем кол-во оставшихся секунд в текущей минуте
+      minutes = Math.floor(minutes); // округляем до целого кол-во оставшихся минут в текущем часе
+      
+      
+      setTimePage(days, hours, minutes, seconds); // выставляем начальные значения таймера
+      
+      function secOut() {
+        if (seconds == 0) { // если секунду закончились то
+          if (minutes == 0) { // если минуты закончились то
+            if (hours == 0 ) { // если часы закончились то
+              if (days == 0) {
+                timeIsUp(timeId); // выводим сообщение об окончании отсчета
+              } else {
+                days--;
+                hours = 23;
+                minutes = 59;
+                seconds = 59;
+              }
+              
+            } else {
+              hours--; // уменьшаем кол-во часов
+              minutes = 59; // обновляем минуты
+              seconds = 59;// обновляем секунды
+            }
+          } else {
+            minutes--; // уменьшаем кол-во минут
+            seconds = 59; // обновляем секунды
+          }
+        } else {
+          seconds--; // уменьшаем кол-во секунд
+        }
+        setTimePage(days, hours, minutes, seconds); // обновляем значения таймера на странице
+      }
+      timerId = setInterval(secOut, 1000); // устанавливаем вызов функции через каждую секунду
+      
+    } else {
+        timerDays.innerHTML = 0;
+        timerHours.innerHTML = 0;
+        timerMin.innerHTML = 0;
+        timerSec.innerHTML = 0;
+    }
+  }
+   
+  function setTimePage(d, h, m, s) { // функция выставления таймера на странице
+    timerDays.innerHTML = d;
+    timerHours.innerHTML = h;
+    timerMin.innerHTML = m;
+    timerSec.innerHTML = s;
+  }
+  
+    function timeIsUp(timerId) { // функция, вызываемая по истечению времени
+      timerDays.innerHTML = 0;
+      timerHours.innerHTML = 0;
+      timerMin.innerHTML = 0;
+      timerSec.innerHTML = 0;
+      clearInterval(timerId); // останавливаем вызов функции через каждую секунду
+    }
+
+  window.onload = function() {
+    initializeTimer();
+  }
+    
+  
+  </script> 
+  
+  
+</body>
+</html>
