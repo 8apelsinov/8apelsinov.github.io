@@ -1,0 +1,377 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Surfers Co.</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400i|Raleway:400,700|Roboto+Condensed:700" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <section class="header__top">
+        <div class="header__logo">
+          <a href="#">
+            <img src="img/Surfers%20Co..png" width="174" height="27">
+          </a>
+        </div>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">boards</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">accessories</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">technology</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">team</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">dealers</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__social social-block">
+          <a href="#" class="social-block__link">
+            <svg class="social-block__fb" width="36" height="36">
+              <use xlink:href="sprite.svg#fb"></use>
+            </svg>
+          </a>
+          <a href="#" class="social-block__link">
+            <svg class="social-block__instagram" width="36" height="36">
+              <use xlink:href="sprite.svg#instagram"></use>
+            </svg>
+          </a>
+          <a href="#" class="social-block__link">
+            <svg class="social-block__twitter" width="36" height="36">
+              <use xlink:href="sprite.svg#twitter"></use>
+            </svg>
+          </a>
+        </div>
+      </section>
+    </div>
+    <section class="header__intro intro">
+      <span class="intro__title">Ride every wave as if it's your last</span>
+      <span class="intro__text">We love the motion of the ocean</span>
+      <div class="intro__slider slider">
+        <div class="slider__item">
+          <div class="slider__left-side">
+            <div class="slider__photos">
+              <input type="radio" name="slide-switch" id="thumb1" checked>
+              <label for="thumb1" class="slider__thumbs">
+                <img class="slider__img" src="img/slider-big.png" width="70" height="70">
+              </label>
+              <img class="slider__image" src="img/slider-big.png" width="330" height="450">
+
+              <input type="radio" name="slide-switch" id="thumb2">
+              <label for="thumb2" class="slider__thumbs">
+                <img class="slider__img" src="img/surf-1.png" width="60">
+              </label>
+              <img class="slider__image" src="img/surf-1.png" width="330" height="450">
+
+              <input type="radio" name="slide-switch" id="thumb3">
+              <label for="thumb3" class="slider__thumbs">
+                <img class="slider__img" src="img/surf-2.png" width="60">
+              </label>
+              <img class="slider__image" src="img/surf-2.png" width="330" height="450">
+
+              <input type="radio" name="slide-switch" id="thumb4">
+              <label for="thumb4" class="slider__thumbs">
+                <img class="slider__img" src="img/surf-3.png" width="60">
+              </label>
+              <img class="slider__image" src="img/surf-3.png" width="330" height="450">
+            </div>
+          </div>
+
+          <div class="slider__block block">
+            <div class="block__arrow">
+              <div class="block__arrow--left" onClick=back()>
+                <svg viewBox="0 0 50 50">
+                  <use xlink:href="sprite.svg#arrow-left"></use>
+                </svg>
+              </div>
+              <div class="block__arrow--right" onClick=forward()>
+                <svg viewBox="0 0 50 50">
+                  <use xlink:href="sprite.svg#arrow-right"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="block__pages">05/25</div>
+            <span class="block__title">JR Surfboards The Donny Stoker Yellow/Green Rail Fade</span>
+            <div class="block__reviews reviews">
+              <div class="reviews__stars"></div>
+              <div class="reviews__count">
+                <a href="#" class="reviews__link">(52)</a>
+              </div>
+            </div>
+            <ul class="block__tabs">
+              <li class="block__item">
+                <input type="radio" name="tabs" id="description" checked>
+                <label class="block__label" for="description">description</label>
+                <div class="block__content">Easy to ride, care free surfing craft that's fun for everyone, paddles well, super fast down the line and great for any level of surfing depending on who rides it. The Donny Stoker, a rework on design from stokesys first ever pro model.
+                  A super easy to surf and fun board. The Donny Stoker is a board for total freesurfing expression.</div>
+              </li>
+              <li class="block__item">
+                <input type="radio" name="tabs" id="features">
+                <label class="block__label" for="features">features</label>
+                <div class="block__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+              </li>
+              <li class="block__item">
+                <input type="radio" name="tabs" id="dimensions">
+                <label class="block__label" for="dimensions">dimensions</label>
+                <div class="block__content">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+              </li>
+            </ul>
+            <div class="block__bottom">
+              <span class="block__price">$499.99</span>
+              <button class="block__button"><a href="#" class="block__link">buy now</a></button>
+            </div>
+            <a href="#" class="block__more">View all boards</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="about-us">
+      <span class="about-us__head">about us</span>
+      <div class="about-us__wrapper">
+        <div class="about-us__title">We are surfers co.</div>
+        <span class="about-us__text">Lorem ipsum dolor sit amet, aeneam consectetur adipiscing elit. Fusce iaculis feugiat arcunum fermentum hendrerit. Suspendisse auctor labor nisi, et interdum diam facilisis, aliquam pulvinar semi egetis belle sollicitudin ut. Nullam tincidun finibustus scelerisque.</span>
+        <a href="#" class="about-us__link">Read more</a>
+      </div>
+
+      <video controls class="about-us__video">
+        <sourse src="#" type="video/mp4"></sourse>
+      </video>
+    </section>
+
+    <div class="container">
+      <section class="our-team">
+        <div class="our-team__arrows our-team__arrows--left">
+          <svg viewBox="0 0 50 50">
+            <use xlink:href="sprite.svg#arrow-left"></use>
+          </svg>
+        </div>
+        <div class="our-team__arrows our-team__arrows--right">
+          <svg viewBox="0 0 50 50">
+            <use xlink:href="sprite.svg#arrow-right"></use>
+          </svg>
+        </div>
+        <div class="our-team__wrapper">
+
+          <a class="our-team__item" href="#">
+            <img src="img/team-11.png" width="100" height="100" class="our-team__userpic">
+            <span class="our-team__name">Taj Burrow</span>
+            <span class="our-team__nickname">@tajamos</span>
+            <div class="our-team__location">
+              <svg class="our-team__svg" viewBox="0 -2 10 13">
+                <use xlink:href="sprite.svg#location"></use>
+              </svg>
+              <span class="our-team__place">Yallingup, Australia</span>
+            </div>
+          </a>
+          <a class="our-team__item" href="#">
+            <img src="img/team-2.png" width="100" height="100" class="our-team__userpic">
+            <span class="our-team__name">Malia Manuel</span>
+            <span class="our-team__nickname">@maliamanuel</span>
+            <div class="our-team__location">
+              <svg class="our-team__svg" viewBox="0 -2 10 13">
+                <use xlink:href="sprite.svg#location"></use>
+              </svg>
+              <span class="our-team__place">Wailua, Hi</span>
+            </div>
+          </a>
+          <a class="our-team__item" href="#">
+            <img src="img/team-31.png" width="100" height="100" class="our-team__userpic">
+            <span class="our-team__name">Ian Walsh</span>
+            <span class="our-team__nickname">@ian.walsh</span>
+            <div class="our-team__location">
+              <svg class="our-team__svg" viewBox="0 -2 10 13">
+                <use xlink:href="sprite.svg#location"></use>
+              </svg>
+              <span class="our-team__place">Maui, Hi</span>
+            </div>
+          </a>
+          <a class="our-team__item" href="#">
+            <img src="img/taem-41.png" width="100" height="100" class="our-team__userpic">
+            <span class="our-team__name">Macy Callaghan</span>
+            <span class="our-team__nickname">@macyjanecallaghan</span>
+            <div class="our-team__location">
+              <svg class="our-team__svg" viewBox="0 -2 10 13">
+                <use xlink:href="sprite.svg#location"></use>
+              </svg>
+              <span class="our-team__place">San Clemente, CA</span>
+            </div>
+          </a>
+
+          <a class="our-team__item" href="#">
+            <img src="img/team-11.png" width="100" height="100" class="our-team__userpic">
+            <span class="our-team__name">Taj Burrow2</span>
+            <span class="our-team__nickname">@tajamos</span>
+            <div class="our-team__location">
+              <svg class="our-team__svg" viewBox="0 -2 10 13">
+                <use xlink:href="sprite.svg#location"></use>
+              </svg>
+              <span class="our-team__place">Yallingup, Australia</span>
+            </div>
+          </a>
+          <a class="our-team__item" href="#">
+            <img src="img/team-2.png" width="100" height="100" class="our-team__userpic">
+            <span class="our-team__name">Malia Manuel2</span>
+            <span class="our-team__nickname">@maliamanuel</span>
+            <div class="our-team__location">
+              <svg class="our-team__svg" viewBox="0 -2 10 13">
+                <use xlink:href="sprite.svg#location"></use>
+              </svg>
+              <span class="our-team__place">Wailua, Hi</span>
+            </div>
+          </a>
+          <a class="our-team__item" href="#">
+            <img src="img/team-31.png" width="100" height="100" class="our-team__userpic">
+            <span class="our-team__name">Ian Walsh2</span>
+            <span class="our-team__nickname">@ian.walsh</span>
+            <div class="our-team__location">
+              <svg class="our-team__svg" viewBox="0 -2 10 13">
+                <use xlink:href="sprite.svg#location"></use>
+              </svg>
+              <span class="our-team__place">Maui, Hi</span>
+            </div>
+          </a>
+          <a class="our-team__item" href="#">
+            <img src="img/taem-41.png" width="100" height="100" class="our-team__userpic">
+            <span class="our-team__name">Macy Callaghan2</span>
+            <span class="our-team__nickname">@macyjanecallaghan</span>
+            <div class="our-team__location">
+              <svg class="our-team__svg" viewBox="0 -2 10 13">
+                <use xlink:href="sprite.svg#location"></use>
+              </svg>
+              <span class="our-team__place">San Clemente, CA</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="blog">
+        <span class="blog__title">latest updates</span>
+        <div class="blog__wrapper">
+          <div class="blog__item">
+            <a href="#" class="blog__link">
+              <img class="blog__thumbs" src="img/blog-1.png" width="" height="">
+              <span class="blog__text">Ellie Turner and Jobe Harris have taken out the 2016 British National Surf Championships</span>
+            </a>
+          </div>
+          <div class="blog__item">
+            <a href="#" class="blog__link">
+              <img class="blog__thumbs" src="img/blog-2.png" width="" height="">
+              <span class="blog__text">A large group of surfers invaded the coast of La Jolla Shores, in California, with a single goal in mind</span>
+            </a>
+          </div>
+          <div class="blog__item">
+            <a href="#" class="blog__link">
+              <img class="blog__thumbs" src="img/blog-3.png" width="" height="">
+              <span class="blog__text">Surfboards are constantly evolving, and there are multiple board designs for a broad range of environments</span>
+            </a>
+          </div>
+        </div>
+        <button class="blog__button"><a class="blog__more" href="#">View all posts</a></button>
+      </section>
+    </div>
+
+    <section class="social">
+      <div class="container">
+        <span class="social__title">instagram</span>
+        <a class="social__instagram" href="#">
+          <div class="social__wrapper">
+            <img class="social__thumbs" src="img/instagram-1.png" width="310" height="310">
+            <img class="social__thumbs" src="img/instagram-2.png" width="310" height="310">
+            <img class="social__thumbs" src="img/instagram-3.png" width="310" height="310">
+            <img class="social__thumbs" src="img/instagram-4.png" width="310" height="310">
+          </div>
+          <div class="social__bottom">
+            <span class="social__text--blue">follow us</span><span class="social__text"> @surferco</span>
+          </div>
+        </a>
+        <a class="social__fb-widget" href="#"></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">About</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Boards</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Accessories</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Blog</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Technology</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Team</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Dealers</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Contact us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__subscribe subscribe">
+          <span class="subscribe__text">Subscribe to our newsletter</span>
+          <form action="" method="post" class="subscribe__form">
+            <input type="email" class="subscribe__email" placeholder="Your e-mail">
+            <input type="submit" class="subscribe__submit">
+            <svg class="subscribe__arrow" viewBox="0 0 80 80">
+              <use xlink:href="sprite.svg#arrow-right"></use>
+            </svg>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    var ourTeamBlock = document.querySelector('.our-team');
+    var ourTeamItemArray = ourTeamBlock.querySelectorAll(".our-team__item");
+    var leftArrow = ourTeamBlock.querySelector('.our-team__arrows--left');
+    var rightArrow = ourTeamBlock.querySelector('.our-team__arrows--right');
+    var gallery = ourTeamBlock.querySelector('.our-team__wrapper');
+
+    var sliderWidth = 246;
+    var countSlide = 4;
+    var position = 0;
+
+    leftArrow.onclick = function() {
+      position = Math.min(position + countSlide * sliderWidth, 0);
+      gallery.style.marginLeft = position + 'px';
+    };
+
+    rightArrow.onclick = function() {
+      position = Math.max(position - sliderWidth * countSlide, -sliderWidth * (ourTeamItemArray.length - countSlide));
+      gallery.style.marginLeft = position + 'px';
+    };
+  </script>
+
+</body>
+
+</html>
