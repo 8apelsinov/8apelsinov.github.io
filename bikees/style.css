@@ -1,0 +1,319 @@
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+*/
+.container {
+  width: 730px;
+  margin: 0 auto;
+}
+body {
+  
+}
+.header {
+  background-color: rgba(255,255,255,0.1);
+ 
+}
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 47px 30px;
+  margin-bottom: 115px;
+}
+
+.header__svg {
+  fill: #fff;
+  cursor: pointer;
+}
+.header__svg:hover {
+  transform: scale(1.5);
+  transition: .5s;
+}
+.main-page__top {
+  height: 670px;
+  background-image: linear-gradient(to bottom, rgba(25,65,174,.8), rgba(72,176,176,.5)),
+                      url(img/Calque-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom left;
+  box-sizing: border-box;
+  
+}
+.main-page__logo {
+  display: block;
+  width: 335px;
+  margin: 0 auto;
+  margin-bottom: 43px;
+  text-align: center;
+}
+.main-page__logo img {
+  width: 235px;
+  height: 135px;
+}
+.main-page__bottom {
+ height: 670px;
+  background-image:   linear-gradient(to bottom, rgba(127,50,192,.8), rgba(224,145,254,.5)),
+                      url(img/Cruisers-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: ;
+  padding-top: 160px;
+  box-sizing: border-box;
+  }
+.main-page__bottom .header {
+  display: none;
+}
+.main-page__button {
+  display: block;
+  border: none;
+  outline: none;
+  width: 355px;
+  margin: 0 auto;
+  border-radius: 7px;
+  padding: 20px 0;
+  background-color: rgba(255,255,255,.1)
+}
+.main-page__button:hover {
+  background-color: rgba(255,255,255,.2);
+}
+.main-page__button:active {
+  background-color: rgba(255,255,255,.0);
+}
+.main-page__link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 39px;
+  line-height: 72px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  letter-spacing: -1px;
+}
+.footer {
+  background-color: #595f6f;
+  display: flex;
+  flex-direction: column;
+  color: #c3c3c3;
+}
+.footer__info {
+  height: 545px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  padding-bottom: 20px;
+}
+.footer__info::after {
+  position: absolute;
+  content: "";
+  width: 600px;
+  height: 2px;
+  background-color: #4d5362;
+  bottom: 0px;
+  
+}
+.footer__text {
+  font-size: 33px;
+  line-height: 46px;
+text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+.footer__delivery {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 33px;
+  line-height: 46px;
+  color: #c3c3c3;
+}
+.footer__copyright {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 46px;
+  color: #fff;
+}
+.nav {
+   position: relative;
+/*  text-align: center;*/
+  padding: 40px 0;
+}
+.nav::after {
+  position: absolute;
+  content: "";
+  width: 580px;
+  height: 2px;
+  background-color: #4d5362;
+  bottom: 0px;
+  left: 80px;
+}
+.nav__list {
+  list-style: none;
+  text-align: center;
+}
+.nav__link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 37px;
+  line-height: 88px;
+  color: #c3c3c3;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav__link:hover {
+  text-decoration: underline;
+}
+.subscribe {
+  text-align: center;
+  padding: 40px 0;
+}
+.subscribe__text {
+  display: block;
+ font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 35px;
+  line-height: 70px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.subscribe__input {
+  border: none;
+  outline: none;
+  background-color: rgba(93,98,113,.9);
+  width: 540px;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+ font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  line-height: 70px;
+  font-style: italic;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-bottom: 80px;
+}
+.subscribe__input:focus {
+  background-color: #4d5362;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.social__link {
+  margin-right: 70px;
+  fill: #a8abb3;
+  transition: .5s;
+}
+.social__link:last-child {
+  margin-right: 0;
+}
+.social__twitter:hover {
+   fill: #00b2ff;
+  transform: scale(1.2);
+}
+.social__fb:hover {
+  fill: #3b5998;
+  transform: scale(1.2);
+}
+.social__google:hover {
+  fill: #ea4335;
+   transform: scale(1.2);
+}
+
+@media(min-width: 2880px) {
+  .container {
+    width: 2880px;
+  }
+  .main-page__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-page__wrapper .header__search {
+    display: none;
+  }
+  .header__wrapper {
+     padding: 58px 85px;
+    margin-bottom: 475px;
+  }
+  .main-page__top,
+  .main-page__bottom {
+    width: 50%;
+    height: 1800px;
+    background-size: cover;
+  }
+  .main-page__top {
+    background-image: linear-gradient(to bottom, rgba(25,65,174,.8), rgba(72,176,176,.5)),
+                      url(img/Calque%205.png);
+  }
+  .main-page__bottom {
+    background-image:  linear-gradient(to bottom, rgba(127,50,192,.8), rgba(224,145,254,.5)),
+                      url(img/Cruisers.png);
+    padding-top: 0;
+  }
+  .main-page__bottom .header  {
+    display: block;
+    width: 100%;
+    height: 179px;
+    text-align: right;
+    padding-top: 60px;
+    padding-right: 80px;
+    margin-bottom: 475px;
+    box-sizing: border-box;
+  }
+  
+  .main-page__bottom .header__search {
+    display: block;
+  }
+  .main-page__logo img {
+    width: 425px;
+    height: 245px;
+  }
+  .footer {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 80px;  
+  }
+  .footer__info {
+    width: 1440px;
+    align-items: flex-start;
+  }
+  .footer__info::after {
+    width: 2px;
+    height: 430px;
+    top: 70px;
+    right: 80px;
+  }
+  .nav {
+    width: 810px;
+   padding: 150px 0;
+    box-sizing: border-box;
+}
+  .nav::after {
+    width: 2px;
+    height: 430px;
+    left: 700px;
+    top: 70px;
+  }
+  .nav__list {
+    height: 270px;
+    text-align: left;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;  
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .nav__link {
+    font-size: 35px;
+    line-height: 70px;
+  }
+  .subscribe {
+  padding: 116px 0;
+}
+  .subscribe__input {
+    width: 450px;
+    margin: 0 auto;
+  }
+}
