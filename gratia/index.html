@@ -147,9 +147,9 @@
                 <span class="booking__title">book a table</span>
                 <em class="booking__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</em> 
                 <form action="" method="post">
-                    <input type="text" class="booking__day" placeholder="DD" required autofocus>
-                    <input type="text" class="booking__month" placeholder="MM" required>
-                    <input type="text" class="booking__year" value="2018        " required>
+                    <input type="number" class="booking__day" placeholder="DD" min="01" max="31" required autofocus>
+                    <input type="number" class="booking__month" placeholder="MM"  min="01" max="12" required>
+                    <input type="number" class="booking__year" value="2018" min="2018" max="2019" required>
                     <input type="time" class="booking__time" placeholder="HOUR" required>
                     <input type="number" class="booking__people" placeholder="number of people" min="1" max="6" required>
                     <input type="text" class="booking__name" placeholder="first name and last name" required>
@@ -165,9 +165,6 @@
                         </datalist>
                     <textarea class="booking__textarea" rows="7" placeholder="Your message.."></textarea><br>
                     <input type="submit" class="booking__submit" value="send">
-
-
-
                 </form>
             </div>
         </section>
@@ -187,10 +184,8 @@
                 modal.classList.add("hidden");
             };
             
-            
             buttonOpen.addEventListener("click", function() {
                 openModal();
-                
             });
             buttonOpen.addEventListener("keydown", function(e) {
                 if (e.keyCode == ENTER_KEYCODE) {
@@ -207,8 +202,15 @@
                     closeModal();
                 }
             });
+        //validity
+          var bookingPeopleValidity = modal.querySelector(".booking__people");
+          bookingPeopleValidity.addEventListener("invalid", function() {
+              if (bookingPeopleValidity.value > 6) {
+                bookingPeopleValidity.setCustomValidity("If you need a table for more than 6 people please call the manager");
+              }
+            });
             
-            /*slider*/
+        /*slider*/
             var arrowLeft = document.querySelector(".arrows__left");
             var arrowRight = document.querySelector(".arrows__right");
             var slider = {
@@ -235,8 +237,6 @@
                     this.set(this.slides[this.frame]);
                 }
             };
-            
-           
 //         
             window.onload = function() {
                 slider.init();
@@ -251,7 +251,7 @@
                 slider.right();
             });
             
-             
+            
             
         </script>
     </body>
