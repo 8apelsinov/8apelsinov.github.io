@@ -202,14 +202,7 @@
                     closeModal();
                 }
             });
-        //validity
-          var bookingPeopleValidity = modal.querySelector(".booking__people");
-          bookingPeopleValidity.addEventListener("invalid", function() {
-              if (bookingPeopleValidity.value > 6) {
-                bookingPeopleValidity.setCustomValidity("If you need a table for more than 6 people please call the manager");
-              }
-            });
-            
+       
         /*slider*/
             var arrowLeft = document.querySelector(".arrows__left");
             var arrowRight = document.querySelector(".arrows__right");
