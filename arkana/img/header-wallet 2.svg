@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 47" width="50" height="47">
+	<defs>
+		<image width="50" height="47" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAvCAMAAACWqWnGAAABnlBMVEX///9/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39+fn5/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39+fn5/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39+fn5/f39/f39/f39/f39/f39/f39/f39/f38VfFiYAAAAinRSTlMAGQQWBzHB/+VRsu48F5r9/NsGc/D6/qEg2XZL+9BASvEYKLjsagG3nRGQ+ZEzaOspj8RB0dpJ6lgwo7/J5+29iRQ5DaU/1mzfI3Fv/xBVrr4787MIw2mCrz0TzehZJHA3VIgdAxWwYaxju7xGff0fAlwrevZeqcV0tn/kd/cLYEcgnjI64A/PzJdSYgzfAAABs0lEQVR4nO2VVVMDMRSFgx58l0IDhUULhbZAaXEtbsXd3d3dnX9NdxcKdIZN+gDDA+cls2fy7U1ubm4I+V5+/oQEBGpM8FZQMEJCwxAewQtERgkQAIiI1nEBuphYCHoRNC7egAQeItEA6CUgKZmQFKSmMYF0IyDpKTIyTfJnFrIZgNkiQbRSSDnmtz9IQq4W4J9nA7WKgDHf49nhMH1PFBSqmygq/hy3BKVfp5WVV7yr0p1VgQLUUfFZVahWRmdNrULUWcEvQ72akIbkRj4VN6FZRlrQysjhh9pgV5F4bsT1j/iKtP9UlI5Ol0dd6O5hI3m9XmXW189AMoEBi92jOBtQo42YezHo7jZDw9kjqjE6hnFtZALBhEyOu9dDp1RnGtBGlBQZ4ZiZpfo5xZnnQXSSuEDIIpZUiwsRJXevWcYKP0JWsba+sSltKc42C9nBKiG71fJ57KlOLgtZ2McBIXN25+Fbl6o/go1xlMegJ0OnHlnOAAurYM4vvArGecksy8irjyBZGLg2/clb+Y7c/NWF/Q7i82Oxhtu7Mj7dJ8ElI42+PHwPj0q0+64nTj2/+MnAK9SHimZ4kewgAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Wallet 2" href="#img1" x="0" y="0" />
+</svg>

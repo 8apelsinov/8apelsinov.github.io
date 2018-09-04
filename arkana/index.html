@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Arkana shop</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <section class='header'>
+      <div class='header__top'>
+        <div class='header__left'>
+          <div class='header__language' onclick='openHamburger()'>
+            <div class='header__gamburger'></div>
+            <div class='modal-wrapper'></div>
+            <div class='header__gamburger--active'>
+                <a href='ya.ru'>English</a>
+                <a href='#'>French</a>
+                <a href='#'>Spain</a>
+            </div>
+          </div>
+          <div class='header__search'  onclick='openSearch()'>
+            <svg width='20' height='20'>
+              <use xlink:href='sprite.svg#search'></use>
+            </svg>
+            <div class='modal-wrapper'></div>
+            <div class='header__search--active search'>
+              <input type='text' class='search__input' autofocus>
+              <input type='submit' id='submit-btn'  class='search__submit'>
+              <label for='submit-btn'  class='search__label'>
+                <svg class='search__svg' width='20' height='20'>
+                  <use    xlink:href='sprite.svg#search'></use>
+                </svg>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class='header__logo'>
+          <a href=''><img src='img/header-logo.png' width='187' height='18' alt='Arkana'></a>
+        </div>
+        <div class='header__right'>
+          <div class='header__share share'  onclick='openShare()'>
+            <svg width='20' height='20'>
+              <use xlink:href='sprite.svg#share'></use>
+            </svg>
+            <div class='modal-wrapper'></div>
+            <div class='header__share--active'>
+              <div class='share__wrapper'>
+                <svg class='share__item' width='17' height='14'>
+                  <use xlink:href='sprite.svg#fb-header'></use>
+                </svg>
+                <svg class='share__item' width='17' height='14'>
+                  <use xlink:href='sprite.svg#insta-header'></use>
+                </svg>
+                <svg class='share__item' width='17' height='14'>
+                  <use xlink:href='sprite.svg#pin-header'></use>
+                </svg>
+                <svg class='share__item' width='17' height='14'>
+                  <use xlink:href='sprite.svg#twitter-header'></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class='header__basket'  onclick='openBasket()'>
+            <svg width='30' height='20'>
+              <use xlink:href='sprite.svg#basket'></use>
+            </svg>
+            <div class='modal-wrapper'></div>
+            <div class='header__basket--active basket'>
+              <div class='basket__card'>
+                <div class='basket__header'>
+                  <span class="basket__card-title">shopping cart</span>
+                  <button class='basket__btn'></button>
+                </div>
+                <div class='basket__wrapper'>
+                  <div class='basket__item'>
+                    <img src='' width='75' height='100'>
+                    <div class='basket__description'>
+                      <span class='basket__item-name'>Happy intarsia crewneck sweater</span>
+                      <span class='basket__item-info'>Size: <span class='basket__item-info--result'>S</span></span>
+                      <span class='basket__item-info'>Color: <span class='basket__item-info--result'>Blue</span></span>
+                      <span class='basket__price'>$24.95 <span class='basket__count'>x 2</span></span>
+                    </div>
+                    <button class='basket__delete'></button>
+                  </div>
+                  
+                   <div class='basket__item'>
+                    <img src='' width='75' height='100'>
+                    <div class='basket__description'>
+                      <span class='basket__item-name'>Happy intarsia crewneck sweater</span>
+                      <span class='basket__item-info'>Size: <span class='basket__item-info--result'>S</span></span>
+                      <span class='basket__item-info'>Color: <span class='basket__item-info--result'>Blue</span></span>
+                      <span class='basket__price'>$24.95 <span class='basket__count'>x 2</span></span>
+                    </div>
+                    <button class='basket__delete'></button>
+                  </div>
+                  
+                   <div class='basket__item'>
+                    <img src='' width='75' height='100'>
+                    <div class='basket__description'>
+                      <span class='basket__item-name'>Happy intarsia crewneck sweater</span>
+                      <span class='basket__item-info'>Size: <span class='basket__item-info--result'>S</span></span>
+                      <span class='basket__item-info'>Color: <span class='basket__item-info--result'>Blue</span></span>
+                      <span class='basket__price'>$24.95 <span class='basket__count'>x 2</span></span>
+                    </div>
+                    <button class='basket__delete'></button>
+                  </div>
+                </div>
+                <div class='basket__total total'>
+                  <div class='total__wrapper'>
+                    <div class='total__left-side'>
+                      <span class='total__point'>2 items</span>
+                      <span class='total__point'>Shipping</span>
+                      <span class='total__point'>Taxes</span>
+                    </div>
+                    <div class='total__right-side'>
+                      <span class='total__cost'>42.95 $</span>
+                      <span class='total__cost'>7.00 $</span>
+                      <span class='total__cost'>0.00 $</span>
+                    </div>
+                  </div>
+                  <div class='total__result'>
+                    <span class='total__total'>total</span>
+                    <span class='total__price'>42.95 $</span>
+                  </div>
+                  <a href='#' class='total__link'>
+                    <button class='total__button black-button'>processed to chekout</button>
+                  </a>  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class='header__nav nav'>
+        <ul class='nav__list'>
+          <li class='nav__item'>
+            <a href='#' class='nav__link'>dresses</a>
+            <div class='header__drop-menu drop-menu'>
+              <div class='drop-menu__big-wrapper'>
+          <div class='drop-menu__wrapper'>
+            <div class='drop-menu__left-side'>
+              <h4>Dresses</h4>
+              <ul class='drop-menu__list'>
+                <li>
+                  <a href='#' class='drop-menu__link'>Blouses</a>
+                </li>
+                <li>
+                  <a href='#' class='drop-menu__link'>Shirts</a>
+                </li>
+                <li>
+                  <a href='#' class='drop-menu__link'>T-Shirts</a>
+                </li>
+              </ul>
+              <h4>blouses</h4>
+              <ul class='drop-menu__list'>
+                <li>
+                  <a href='#' class='drop-menu__link'>Coats</a>
+                </li>
+                <li>
+                  <a href='#' class='drop-menu__link'>Hoddies_&_Pullovers</a>
+                </li>
+                <li>
+                  <a href='#' class='drop-menu__link'>Jackets</a>
+                </li>
+              </ul>
+              <h4>warm clothes</h4>
+              <ul class='drop-menu__list'>
+                <li>
+                  <a href='#' class='drop-menu__link'>Catdigans</a>
+                </li>
+                <li>
+                  <a href='#' class='drop-menu__link'>Sweaters</a>
+                </li>
+                <li>
+                  <a href='#' class='drop-menu__link'>Sweatshirts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class='drop-menu__wrapper'>
+            <div class='drop-menu__card'>
+              <img src='img/small-img-1.png' width='79' height='105'>
+              <div class='drop-menu__card-info'>
+                <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                <div class='drop-menu__price'>
+                  <span class='drop-menu__actual-price'>$ 199.00</span>
+                  <span class='drop-menu__previous-price'>$ 299.00</span>
+                </div>
+              </div>
+            </div>
+            <div class='drop-menu__card'>
+              <img src='img/small-img-2.png' width='' height=''>
+              <div class='drop-menu__card-info'>
+                <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                <div class='drop-menu__price'>
+                  <span class='drop-menu__actual-price'>$ 199.00</span>
+                  <span class='drop-menu__previous-price'>$ 299.00</span>
+                </div>
+              </div>
+            </div>
+            <div class='drop-menu__card'>
+              <img src='img/small-img-3.png' width='' height=''>
+              <div class='drop-menu__card-info'>
+                <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                <div class='drop-menu__price'>
+                  <span class='drop-menu__actual-price'>$ 199.00</span>
+                  <span class='drop-menu__previous-price'>$ 299.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='drop-menu__wrapper'>
+        <ul class='drop-menu__right-side right-side'>
+          <li>
+            <a href='#' class='right-side__link'>Logotype</a>
+          </li>
+          <li>
+            <a href='#' class='right-side__link'>Logotype</a>
+          </li>
+          <li>
+            <a href='#' class='right-side__link'>Logotype</a>
+          </li>
+          <li>
+            <a href='#' class='right-side__link'>Logotype</a>
+          </li>
+          <li>
+            <a href='#' class='right-side__link'>Logotype</a>
+          </li>
+          <li>
+            <a href='#' class='right-side__link'>Logotype</a>
+          </li>
+        </ul>
+      </div>
+        </div>
+            </div>
+          </li>
+          <li class='nav__item'>
+            <a href='#' class='nav__link'>blouses</a>
+            <div class='header__drop-menu drop-menu'>
+        <div class='drop-menu__big-wrapper'>
+          <div class='drop-menu__wrapper'>
+            <div class='drop-menu__left-side'>
+              <h4>blouses</h4>
+              <ul class='drop-menu__list'>
+                <li>
+                  <a href='#' class='drop-menu__link'>Blouses</a>
+                </li>
+                <li>
+                  <a href='#' class='drop-menu__link'>Shirts</a>
+                </li>
+                <li>
+                  <a href='#' class='drop-menu__link'>T-Shirts</a>
+                </li>
+              </ul>
+              <h4>tees</h4>
+              <ul class='drop-menu__list'>
+                <li>
+                  <a href='#' class='drop-menu__link'>Coats</a>
+                </li>
+                <li>
+                  <a href='#' class='drop-menu__link'>Hoddies_&_Pullovers</a>
+                </li>
+                <li>
+                  <a href='#' class='drop-menu__link'>Jackets</a>
+                </li>
+              </ul>
+              <h4>warm clothes</h4>
+              <ul class='drop-menu__list'>
+                <li>
+                  <a href='#' class='drop-menu__link'>Catdigans</a>
+                </li>
+                <li>
+                  <a href='#' class='drop-menu__link'>Sweaters</a>
+                </li>
+                <li>
+                  <a href='#' class='drop-menu__link'>Sweatshirts</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class='drop-menu__wrapper'>
+            <div class='drop-menu__card'>
+              <img src='img/small-img-1.png' width='79' height='105'>
+              <div class='drop-menu__card-info'>
+                <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                <div class='drop-menu__price'>
+                  <span class='drop-menu__actual-price'>$ 199.00</span>
+                  <span class='drop-menu__previous-price'>$ 299.00</span>
+                </div>
+              </div>
+            </div>
+            <div class='drop-menu__card'>
+              <img src='img/small-img-2.png' width='79' height='105'>
+              <div class='drop-menu__card-info'>
+                <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                <div class='drop-menu__price'>
+                  <span class='drop-menu__actual-price'>$ 199.00</span>
+                  <span class='drop-menu__previous-price'>$ 299.00</span>
+                </div>
+              </div>
+            </div>
+            <div class='drop-menu__card'>
+              <img src='img/small-img-3.png' width='79' height='105'>
+              <div class='drop-menu__card-info'>
+                <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                <div class='drop-menu__price'>
+                  <span class='drop-menu__actual-price'>$ 199.00</span>
+                  <span class='drop-menu__previous-price'>$ 299.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='drop-menu__wrapper'>
+        <ul class='drop-menu__right-side right-side'>
+          <li>
+            <a href='#' class='right-side__link'>Logotype</a>
+          </li>
+          <li>
+            <a href='#' class='right-side__link'>Logotype</a>
+          </li>
+          <li>
+            <a href='#' class='right-side__link'>Logotype</a>
+          </li>
+          <li>
+            <a href='#' class='right-side__link'>Logotype</a>
+          </li>
+          <li>
+            <a href='#' class='right-side__link'>Logotype</a>
+          </li>
+          <li>
+            <a href='#' class='right-side__link'>Logotype</a>
+          </li>
+        </ul>
+      </div>
+        </div>
+      </div>
+          </li>
+          <li class='nav__item'>
+            <a href='#' class='nav__link'>tees & tops</a>
+            <div class='header__drop-menu drop-menu'>
+              <div class='drop-menu__big-wrapper'>
+                <div class='drop-menu__wrapper'>
+                  <div class='drop-menu__left-side'>
+                    <h4>tees & t-shirts</h4>
+                    <ul class='drop-menu__list'>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Blouses</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Shirts</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>T-Shirts</a>
+                      </li>
+                    </ul>
+                    <h4>outerwear</h4>
+                    <ul class='drop-menu__list'>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Coats</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Hoddies_&_Pullovers</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Jackets</a>
+                      </li>
+                    </ul>
+                    <h4>warm clothes</h4>
+                    <ul class='drop-menu__list'>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Catdigans</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Sweaters</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Sweatshirts</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+          <div class='drop-menu__wrapper'>
+            <div class='drop-menu__card'>
+              <img src='img/small-img-1.png' width='79' height='105'>
+              <div class='drop-menu__card-info'>
+                <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                <div class='drop-menu__price'>
+                  <span class='drop-menu__actual-price'>$ 199.00</span>
+                  <span class='drop-menu__previous-price'>$ 299.00</span>
+                </div>
+              </div>
+            </div>
+            <div class='drop-menu__card'>
+              <img src='img/small-img-2.png' width='79' height='105'>
+              <div class='drop-menu__card-info'>
+                <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                <div class='drop-menu__price'>
+                  <span class='drop-menu__actual-price'>$ 199.00</span>
+                  <span class='drop-menu__previous-price'>$ 299.00</span>
+                </div>
+              </div>
+            </div>
+            <div class='drop-menu__card'>
+              <img src='img/small-img-3.png' width='79' height='105'>
+              <div class='drop-menu__card-info'>
+                <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                <div class='drop-menu__price'>
+                  <span class='drop-menu__actual-price'>$ 199.00</span>
+                  <span class='drop-menu__previous-price'>$ 299.00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='drop-menu__wrapper'>
+            <ul class='drop-menu__right-side right-side'>
+              <li>
+                <a href='#' class='right-side__link'>Logotype</a>
+              </li>
+              <li>
+                <a href='#' class='right-side__link'>Logotype</a>
+              </li>
+              <li>
+                <a href='#' class='right-side__link'>Logotype</a>
+              </li>
+              <li>
+                <a href='#' class='right-side__link'>Logotype</a>
+              </li>
+              <li>
+                <a href='#' class='right-side__link'>Logotype</a>
+              </li>
+              <li>
+                <a href='#' class='right-side__link'>Logotype</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+          </li>
+          <li class='nav__item'>
+            <a href='#' class='nav__link'>t-shirts</a>
+            <div class='header__drop-menu drop-menu'>
+              <div class='drop-menu__big-wrapper'>
+                <div class='drop-menu__wrapper'>
+                  <div class='drop-menu__left-side'>
+                    <h4>t-shirts & blouses</h4>
+                    <ul class='drop-menu__list'>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Blouses</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Shirts</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>T-Shirts</a>
+                      </li>
+                    </ul>
+                    <h4>outerwear</h4>
+                    <ul class='drop-menu__list'>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Coats</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Hoddies_&_Pullovers</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Jackets</a>
+                      </li>
+                    </ul>
+                    <h4>warm clothes</h4>
+                    <ul class='drop-menu__list'>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Catdigans</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Sweaters</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Sweatshirts</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class='drop-menu__wrapper'>
+                  <div class='drop-menu__card'>
+                    <img src='img/small-img-1.png' width='' height=''>
+                    <div class='drop-menu__card-info'>
+                      <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                      <div class='drop-menu__price'>
+                        <span class='drop-menu__actual-price'>$ 199.00</span>
+                        <span class='drop-menu__previous-price'>$ 299.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='drop-menu__card'>
+                    <img src='img/small-img-2.png' width='' height=''>
+                    <div class='drop-menu__card-info'>
+                      <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                      <div class='drop-menu__price'>
+                        <span class='drop-menu__actual-price'>$ 199.00</span>
+                        <span class='drop-menu__previous-price'>$ 299.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='drop-menu__card'>
+                    <img src='img/small-img-3.png' width='' height=''>
+                    <div class='drop-menu__card-info'>
+                      <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                      <div class='drop-menu__price'>
+                        <span class='drop-menu__actual-price'>$ 199.00</span>
+                        <span class='drop-menu__previous-price'>$ 299.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='drop-menu__wrapper'>
+                  <ul class='drop-menu__right-side right-side'>
+                    <li>
+                      <a href='#' class='right-side__link'>Logotype</a>
+                    </li>
+                    <li>
+                      <a href='#' class='right-side__link'>Logotype</a>
+                    </li>
+                    <li>
+                      <a href='#' class='right-side__link'>Logotype</a>
+                    </li>
+                    <li>
+                      <a href='#' class='right-side__link'>Logotype</a>
+                    </li>
+                    <li>
+                      <a href='#' class='right-side__link'>Logotype</a>
+                    </li>
+                    <li>
+                      <a href='#' class='right-side__link'>Logotype</a>
+                    </li>
+                  </ul>
+            </div>
+              </div>
+            </div>
+          </li>
+          <li class='nav__item'>
+            <a href='#' class='nav__link'>outerwear</a>
+            <div class='header__drop-menu drop-menu'>
+              <div class='drop-menu__big-wrapper'>
+                <div class='drop-menu__wrapper'>
+                  <div class='drop-menu__left-side'>
+                    <h4>outerwear</h4>
+                    <ul class='drop-menu__list'>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Blouses</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Shirts</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>T-Shirts</a>
+                      </li>
+                    </ul>
+                    <h4>dresses</h4>
+                    <ul class='drop-menu__list'>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Coats</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Hoddies_&_Pullovers</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Jackets</a>
+                      </li>
+                    </ul>
+                    <h4>warm clothes</h4>
+                    <ul class='drop-menu__list'>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Catdigans</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Sweaters</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Sweatshirts</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class='drop-menu__wrapper'>
+                  <div class='drop-menu__card'>
+                    <img src='img/small-img-1.png' width='' height=''>
+                    <div class='drop-menu__card-info'>
+                      <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                      <div class='drop-menu__price'>
+                        <span class='drop-menu__actual-price'>$ 199.00</span>
+                        <span class='drop-menu__previous-price'>$ 299.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='drop-menu__card'>
+                    <img src='img/small-img-2.png' width='' height=''>
+                    <div class='drop-menu__card-info'>
+                      <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                      <div class='drop-menu__price'>
+                        <span class='drop-menu__actual-price'>$ 199.00</span>
+                        <span class='drop-menu__previous-price'>$ 299.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='drop-menu__card'>
+                    <img src='img/small-img-3.png' width='' height=''>
+                    <div class='drop-menu__card-info'>
+                      <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                      <div class='drop-menu__price'>
+                        <span class='drop-menu__actual-price'>$ 199.00</span>
+                        <span class='drop-menu__previous-price'>$ 299.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='drop-menu__wrapper'>
+              <ul class='drop-menu__right-side right-side'>
+                <li>
+                  <a href='#' class='right-side__link'>Logotype</a>
+                </li>
+                <li>
+                  <a href='#' class='right-side__link'>Logotype</a>
+                </li>
+                <li>
+                  <a href='#' class='right-side__link'>Logotype</a>
+                </li>
+                <li>
+                  <a href='#' class='right-side__link'>Logotype</a>
+                </li>
+                <li>
+                  <a href='#' class='right-side__link'>Logotype</a>
+                </li>
+                <li>
+                  <a href='#' class='right-side__link'>Logotype</a>
+                </li>
+              </ul>
+            </div>
+              </div>
+            </div>
+          </li>
+          <li class='nav__item'>
+            <a href='#' class='nav__link'>pans</a>
+            <div class='header__drop-menu drop-menu'>
+              <div class='drop-menu__big-wrapper'>
+                <div class='drop-menu__wrapper'>
+                  <div class='drop-menu__left-side'>
+                    <h4>pans</h4>
+                    <ul class='drop-menu__list'>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Blouses</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Shirts</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>T-Shirts</a>
+                      </li>
+                    </ul>
+                    <h4>pantalouns</h4>
+                    <ul class='drop-menu__list'>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Coats</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Hoddies_&_Pullovers</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Jackets</a>
+                      </li>
+                    </ul>
+                    <h4>warm clothes</h4>
+                    <ul class='drop-menu__list'>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Catdigans</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Sweaters</a>
+                      </li>
+                      <li>
+                        <a href='#' class='drop-menu__link'>Sweatshirts</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class='drop-menu__wrapper'>
+                  <div class='drop-menu__card'>
+                    <img src='img/small-img-1.png' width='' height=''>
+                    <div class='drop-menu__card-info'>
+                      <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                      <div class='drop-menu__price'>
+                        <span class='drop-menu__actual-price'>$ 199.00</span>
+                        <span class='drop-menu__previous-price'>$ 299.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='drop-menu__card'>
+                    <img src='img/small-img-2.png' width='' height=''>
+                    <div class='drop-menu__card-info'>
+                      <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                      <div class='drop-menu__price'>
+                        <span class='drop-menu__actual-price'>$ 199.00</span>
+                        <span class='drop-menu__previous-price'>$ 299.00</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='drop-menu__card'>
+                    <img src='img/small-img-3.png' width='' height=''>
+                    <div class='drop-menu__card-info'>
+                      <a href='#'><span class='drop-menu__title'>Happy intarsia crewneck sweater</span></a>
+                      <div class='drop-menu__price'>
+                        <span class='drop-menu__actual-price'>$ 199.00</span>
+                        <span class='drop-menu__previous-price'>$ 299.00</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class='drop-menu__wrapper'>
+              <ul class='drop-menu__right-side right-side'>
+                <li>
+                  <a href='#' class='right-side__link'>Logotype</a>
+                </li>
+                <li>
+                  <a href='#' class='right-side__link'>Logotype</a>
+                </li>
+                <li>
+                  <a href='#' class='right-side__link'>Logotype</a>
+                </li>
+                <li>
+                  <a href='#' class='right-side__link'>Logotype</a>
+                </li>
+                <li>
+                  <a href='#' class='right-side__link'>Logotype</a>
+                </li>
+                <li>
+                  <a href='#' class='right-side__link'>Logotype</a>
+                </li>
+              </ul>
+            </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+     
+    </section>
+    <div class='header__arrows header__arrows--left'>
+      <svg class='arrow__svg' width='16' height='20'>
+        <use xlink:href='sprite.svg#arrow-left'></use>
+      </svg>
+    </div>
+    <div class='header__arrows header__arrows--right'>
+    <svg class='arrow__svg' width='16' height='20'>
+        <use xlink:href='sprite.svg#arrow-right'></use>
+      </svg></div>
+    <section class='slider'> 
+      <div class='slider__wrapper slider__wrapper--active'>
+        <h1 class='slider__title'>Tees & Tops</h1>
+        <span class='slider__text'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </span>
+        <a href='#' class='slider__button black-button'>discover more</a>
+      </div>
+      <div class='slider__wrapper'>
+        <h1 class='slider__title'>Dresses</h1>
+        <span class='slider__text'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </span>
+        <a href='#' class='slider__button black-button'>discover more</a>
+      </div>
+      <div class='slider__wrapper'>
+        <h1 class='slider__title'>Blouses</h1>
+        <span class='slider__text'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </span>
+        <a href='#' class='slider__button black-button'>discover more</a>
+      </div>
+      <div class='slider__wrapper'>
+        <h1 class='slider__title'>Outerwear</h1>
+        <span class='slider__text'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </span>
+        <a href='#' class='slider__button black-button'>discover more</a>
+      </div>
+<!--
+       <div class='slider__paginator'>
+        <div class='slider__pag-item'></div>
+        <div class='slider__pag-item'></div>
+        <div class='slider__pag-item'></div>
+        <div class='slider__pag-item'></div>
+      </div>
+-->
+    </section>
+  </header>
+  <main>
+    <section class='features'>
+      <div class='features__item'>
+        <b class='features__title'>Discount system</b>
+        <span class='features__text'> Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat</span>
+      </div>
+      <div class='features__item'>
+        <b class='features__title'>Free delivery</b>
+        <span class='features__text'> Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat</span>
+      </div>
+      <div class='features__item'>
+        <b class='features__title'>Support 24/7</b>
+        <span class='features__text'> Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat</span>
+      </div>
+    </section>
+    
+    <section class='themeblock'>
+      <div class='themeblock__item'>
+        <a href='#' class='themeblock__button white-button'>dresses</a>
+      </div>
+      <div class='themeblock__item'>
+        <a href='#' class='themeblock__button white-button'>blouses</a>
+      </div>
+      <div class='themeblock__item'>
+        <a href='#' class='themeblock__button white-button'>t-shirts</a>
+      </div>
+      <div class='themeblock__item'>
+        <a href='#' class='themeblock__button white-button'>outerwear</a>
+      </div>
+    </section>
+    
+    <section class='products'>
+      <h2 class='products__title title'>Top Trending</h2>
+      <span class='products__main-text'>  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </span>
+      <div class='products__tabs'>
+        <div class='products__tab'>New products</div>
+        <div class='products__tab'>Prices drop</div>
+        <div class='products__tab'>Best sales</div>
+      </div>
+      <div class='products__content'>
+        <div class='products__card'>
+          <img src='img/product-1.png' width='350' height='465' alt='' />
+          <div class='products__new'>New</div>
+          <!-- <div class='products__discount'></div> -->
+          <a class='products__text'>Excepteur sint occaecat cupidatat</a>
+          <div class='products__price'>
+            <span class='products__now-price'>$ 199.00</span>
+            <span class='products__previous-price'></span>
+          </div>
+<!--     hover card     -->
+          <div class="product__card--more card-more">
+            <div class='card-more__wrapper'>
+              <img src='img/product-hover.png' width='350' height='465' alt=''>
+              <div class='card-more__buttons'>
+                <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>quick view</button>
+                </a>                
+               <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>more details</button>
+                </a> 
+              </div>
+              <div class='card-more__descriction'>
+                <span class='card-more__text'>Excepteur sint occaecat cupidatat</span>
+                <div class='card-more__colors'>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class='products__card'>
+          <img src='img/product-2.png' width='350' height='465' alt='' />
+          <!-- <div class='products__new'>New</div>
+          <div class='products__discount'>-20%</div> -->
+          <a class='products__text'>Excepteur sint occaecat cupidatat</a>
+          <div class='products__price'>
+            <span class='products__now-price'>$ 199.00</span>
+            <span class='products__previous-price'></span>
+          </div>
+          <div class="product__card--more card-more">
+            <div class='card-more__wrapper'>
+              <img src='img/product-hover.png' width='350' height='465' alt=''>
+              <div class='card-more__buttons'>
+                <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>quick view</button>
+                </a>                
+               <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>more details</button>
+                </a> 
+              </div>
+              <div class='card-more__descriction'>
+                <span class='card-more__text'>Excepteur sint occaecat cupidatat</span>
+                <div class='card-more__colors'>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='products__card'>
+          <img src='img/product-3.png' width='350' height='465' alt='' />
+          <div class='products__new'>New</div>
+          <div class='products__discount'>-20%</div>
+          <a class='products__text'>Excepteur sint occaecat cupidatat</a>
+          <div class='products__price'>
+            <span class='products__now-price'>$ 199.00</span>
+            <span class='products__previous-price'>$ 299.00</span>
+          </div>
+         <div class="product__card--more card-more">
+            <div class='card-more__wrapper'>
+              <img src='img/product-hover.png' width='350' height='465' alt=''>
+              <div class='card-more__buttons'>
+                <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>quick view</button>
+                </a>                
+               <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>more details</button>
+                </a> 
+              </div>
+              <div class='card-more__descriction'>
+                <span class='card-more__text'>Excepteur sint occaecat cupidatat</span>
+                <div class='card-more__colors'>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                </div>
+              </div>
+            </div>
+          </div>  
+        </div>
+        <div class='products__card'>
+          <img src='img/product-1.png' width='350' height='465' alt='' />
+          <!-- <div class='products__new'>New</div>
+          <div class='products__discount'>-20%</div> -->
+          <a class='products__text'>Excepteur sint occaecat cupidatat</a>
+          <div class='products__price'>
+            <span class='products__now-price'>$ 199.00</span>
+            <span class='products__previous-price'></span>
+          </div>
+         <div class="product__card--more card-more">
+            <div class='card-more__wrapper'>
+              <img src='img/product-hover.png' width='350' height='465' alt=''>
+              <div class='card-more__buttons'>
+                <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>quick view</button>
+                </a>                
+               <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>more details</button>
+                </a> 
+              </div>
+              <div class='card-more__descriction'>
+                <span class='card-more__text'>Excepteur sint occaecat cupidatat</span>
+                <div class='card-more__colors'>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='products__card'>
+          <img src='img/product-5.png' width='350' height='465' alt='' />
+          <!-- <div class='products__new'>New</div> -->
+          <div class='products__discount'>-20%</div>
+          <a class='products__text'>Excepteur sint occaecat cupidatat</a>
+          <div class='products__price'>
+            <span class='products__now-price'>$ 199.00</span>
+            <span class='products__previous-price'>$ 299.00</span>
+          </div>
+         <div class="product__card--more card-more">
+            <div class='card-more__wrapper'>
+              <img src='img/product-hover.png' width='350' height='465' alt=''>
+              <div class='card-more__buttons'>
+                <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>quick view</button>
+                </a>                
+               <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>more details</button>
+                </a> 
+              </div>
+              <div class='card-more__descriction'>
+                <span class='card-more__text'>Excepteur sint occaecat cupidatat</span>
+                <div class='card-more__colors'>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='products__card'>
+          <img src='img/product-6.png' width='350' height='465' alt='' />
+          <!-- <div class='products__new'>New</div> -->
+          <div class='products__discount'>-20%</div>
+          <a class='products__text'>Excepteur sint occaecat cupidatat</a>
+          <div class='products__price'>
+            <span class='products__now-price'>$ 199.00</span>
+            <span class='products__previous-price'>$ 299.00</span>
+          </div>
+         <div class="product__card--more card-more">
+            <div class='card-more__wrapper'>
+              <img src='img/product-hover.png' width='350' height='465' alt=''>
+              <div class='card-more__buttons'>
+                <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>quick view</button>
+                </a>                
+               <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>more details</button>
+                </a> 
+              </div>
+              <div class='card-more__descriction'>
+                <span class='card-more__text'>Excepteur sint occaecat cupidatat</span>
+                <div class='card-more__colors'>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='products__card'>
+          <img src='img/product-7.png' width='350' height='465' alt='' />
+          <!-- <div class='products__new'>New</div>
+          <div class='products__discount'>-20%</div> -->
+          <a class='products__text'>Excepteur sint occaecat cupidatat</a>
+          <div class='products__price'>
+            <span class='products__now-price'>$ 199.00</span>
+            <span class='products__previous-price'></span>
+          </div>
+         <div class="product__card--more card-more">
+            <div class='card-more__wrapper'>
+              <img src='img/product-hover.png' width='350' height='465' alt=''>
+              <div class='card-more__buttons'>
+                <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>quick view</button>
+                </a>                
+               <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>more details</button>
+                </a> 
+              </div>
+              <div class='card-more__descriction'>
+                <span class='card-more__text'>Excepteur sint occaecat cupidatat</span>
+                <div class='card-more__colors'>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='products__card'>
+          <img src='img/product-8.png' width='350' height='465' alt='' />
+          <!-- <div class='products__new'>New</div>
+          <div class='products__discount'>-20%</div> -->
+          <a class='products__text'>Excepteur sint occaecat cupidatat</a>
+          <div class='products__price'>
+            <span class='products__now-price'>$ 199.00</span>
+            <span class='products__previous-price'></span>
+          </div>
+         <div class="product__card--more card-more">
+            <div class='card-more__wrapper'>
+              <img src='img/product-hover.png' width='350' height='465' alt=''>
+              <div class='card-more__buttons'>
+                <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>quick view</button>
+                </a>                
+               <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>more details</button>
+                </a> 
+              </div>
+              <div class='card-more__descriction'>
+                <span class='card-more__text'>Excepteur sint occaecat cupidatat</span>
+                <div class='card-more__colors'>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='products__card'>
+          <img src='img/product-9.png' width='350' height='465' alt='' />
+          <!-- <div class='products__new'>New</div> -->
+          <div class='products__discount'>-20%</div>
+          <a class='products__text'>Excepteur sint occaecat cupidatat</a>
+          <div class='products__price'>
+            <span class='products__now-price'>$ 199.00</span>
+            <span class='products__previous-price'>$ 299.00</span>
+          </div>
+         <div class="product__card--more card-more">
+            <div class='card-more__wrapper'>
+              <img src='img/product-hover.png' width='350' height='465' alt=''>
+              <div class='card-more__buttons'>
+                <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>quick view</button>
+                </a>                
+               <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>more details</button>
+                </a> 
+              </div>
+              <div class='card-more__descriction'>
+                <span class='card-more__text'>Excepteur sint occaecat cupidatat</span>
+                <div class='card-more__colors'>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='products__card'>
+          <img src='img/product-10.png' width='350' height='465' alt='' />
+          <!-- <div class='products__new'>New</div>
+          <div class='products__discount'>-20%</div> -->
+          <a class='products__text'>Excepteur sint occaecat cupidatat</a>
+          <div class='products__price'>
+            <span class='products__now-price'>$ 199.00</span>
+            <span class='products__previous-price'></span>
+          </div>
+         <div class="product__card--more card-more">
+            <div class='card-more__wrapper'>
+              <img src='img/product-hover.png' width='350' height='465' alt=''>
+              <div class='card-more__buttons'>
+                <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>quick view</button>
+                </a>                
+               <a href='#' class='card-more__link'>
+                  <button class='card-more__btn black-button'>more details</button>
+                </a> 
+              </div>
+              <div class='card-more__descriction'>
+                <span class='card-more__text'>Excepteur sint occaecat cupidatat</span>
+                <div class='card-more__colors'>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                  <button class='card-more__color-item'></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href='#' class='products__button black-button'>all products</a>
+    </section>
+    
+    <section class='banner'>
+      <img src='img/banner.png' width='960' height='630' alt='Bags & Shoes' />
+      <div class='banner__right-side'>
+        <h2 class='banner__title title'>Bags & Shoes</h2>
+        <span class='banner__text'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+        <a href='#' class='banner__button white-button'>discover more</a>
+      </div>
+    </section>
+    
+    <section class='brands'>
+      <a href='#' class='brands__item'>
+        <svg class='brands__svg' width='295' height='75'>
+          <use xlink:href='sprite.svg#sisley'></use>
+        </svg>
+      </a>
+      <a href='#' class='brands__item'>
+        <svg class='brands__svg' width='295' height='35'>
+          <use xlink:href='sprite.svg#wrangler'></use>
+        </svg>
+      </a>
+      <a href='#' class='brands__item'>
+         <svg class='brands__svg' width='295' height='75' >
+          <use xlink:href='sprite.svg#fred'></use>
+        </svg>
+      </a>
+      <a href='#' class='brands__item'>
+        <svg class='brands__svg' width='295' height='75'>
+          <use xlink:href='sprite.svg#levis'></use>
+        </svg>
+      </a>
+      <a href='#' class='brands__item'>
+         <svg class='brands__svg' width='295' height='75'>
+          <use xlink:href='sprite.svg#jackjones'></use>
+        </svg>
+      </a>
+       <a href='#' class='brands__item'>
+         <svg class='brands__svg' width='295' height='75'>
+          <use xlink:href='sprite.svg#lacoste'></use>
+        </svg>
+      </a>
+    </section>
+    
+    <section class='instagram'>
+      <a href='#' class='instagram__link'>
+<!--
+         <img src='' width='320' height='320' alt='join us in the instaworld'>
+        <img src='' width='320' height='320' alt='join us in the instaworld'>
+        <img src='' width='320' height='320' alt='join us in the instaworld'>
+        <img src='' width='320' height='320' alt='join us in the instaworld'>
+        <img src='' width='320' height='320' alt='join us in the instaworld'>
+        <img src='' width='320' height='320' alt='join us in the instaworld'> 
+-->
+
+        <img src='img/insta1.png' width='' height='' alt='join us in the instaworld'>
+        <img src='img/insta2.png' width='' height='' alt='join us in the instaworld'>
+        <img src='img/insta3.png' width='' height='' alt='join us in the instaworld'>
+        <img src='img/insta4.png' width='' height='' alt='join us in the instaworld'>
+        <img src='img/insta5.png' width='' height='' alt='join us in the instaworld'>
+        <img src='img/insta6.png' width='' height='' alt='join us in the instaworld'>
+      </a>
+      <span class='instagram__text'>#Instagram</span>
+    </section>
+    
+    <section class='address'>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.4226387906433!2d-122.03116718432123!3d37.33250174525353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5b7176a341d%3A0x4ae040c5bfc59fcd!2s1USA!5e0!3m2!1sen!2sru!4v1534586445952" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class='address__block'>
+        <span class='address__text'>Alterego, 1 Infinite Loop, Cupertino, CA 95014</span><br/>
+        <span class='address__text'>8 - 800 - 2000 - 3000</span><br/>
+        <span class='address__text'>demo@demo.com</span><br/>
+        <span class='address__text'>Mon. - Sun: 09:00 - 19:00</span><br/>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class='footer'>
+      <div class='footer__titles'>
+        <a href='index.html' class='footer__logo'>
+          <img src='img/footer-logo.png' width='195' height='20' />
+        </a>
+        <h3 class='footer__title'>Products</h3>
+        <h3 class='footer__title'>Information</h3>
+        <h3 class='footer__title'>Your account</h3>
+      </div>
+      
+    <div class='footer__wrapper'>
+      <div class='footer__contact'>
+        <span class='footer__text'>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </span>
+        <div class='footer__social social'>
+          <svg class='social__item social__fb' width='35' height='35'>
+            <use xlink:href='sprite.svg#fb'></use>
+          </svg>
+          <svg class='social__item social__instagram' width='35' height='35'>
+            <use xlink:href='sprite.svg#instagram'></use>
+          </svg>
+          <svg class='social__item social__pinterest'>
+            <use xlink:href='sprite.svg#pinterest'></use>
+          </svg>
+          <svg class='social__item social__twitter'>
+            <use xlink:href='sprite.svg#twitter'></use>
+          </svg>
+        </div>
+        <form class='footer__form' action='' method='post'>
+          <input type='email' class='footer__email' placeholder='Enter your e-mail'> 
+          <input type='submit' value='subscribe' class='footer__submit'>
+        </form>
+      </div>
+      
+      <ul class='footer__list'>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>Prices drop</a>
+        </li>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>New products</a>
+        </li>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>Best sales</a>
+        </li>
+      </ul>
+      
+      <ul class='footer__list'>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>Delivery</a>
+        </li>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>Legal Notice</a>
+        </li>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>Terms and conditions of use</a>
+        </li>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>About us</a>
+        </li>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>Secure payment</a>
+        </li>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>Contact us</a>
+        </li>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>Sitemap</a>
+        </li>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>Stores</a>
+        </li>
+      </ul>
+      
+      <ul class='footer__list'>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>Addresses</a>
+        </li>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>Credit slips</a>
+        </li>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>Orders</a>
+        </li>
+        <li class='footer__item'>
+          <a href='#' class='footer__link'>Personal info</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <div class='footer__bottom'>
+      <img src='img/footer-cards.png' width='170' height='25' alt='pay methods'>
+    </div>
+  </footer>
+</body>
+  
+<script>
+  
+  var headerHamburger = document.querySelector('.header__gamburger--active');
+  var modalWrapper = document.querySelector('.modal-wrapper');
+  
+  function openHamburger () {
+    headerHamburger.style.display = 'block';
+    modalWrapper.style.display = 'block';
+//    headerHamburger.classList.add('js-show-popup');
+  };
+  function openSearch () {
+    document.querySelector('.header__search--active').style.display = 'block';
+    modalWrapper.style.display = 'block';
+  };  
+  function openShare () {
+    document.querySelector('.header__share--active').style.display = 'block';
+    modalWrapper.style.display = 'block';
+  };
+  function openBasket() {
+    document.querySelector('.header__basket--active').style.display = 'block';
+    modalWrapper.style.display = 'block';
+  }
+  
+  window.onclick = function (event) {
+    if (event.target == modalWrapper) {
+     headerHamburger.style.display = 'none';
+      modalWrapper.style.display = 'none'; 
+      document.querySelector('.header__search--active').style.display = 'none';
+      document.querySelector('.header__share--active').style.display = 'none';
+      document.querySelector('.header__basket--active').style.display = 'none';
+    }
+  }
+  
+  
+  
+    
+  var slides = document.querySelectorAll('.slider__wrapper'); 
+  var pages = document.querySelectorAll('.slider__pag-item');
+  var currentSlide = 0;
+  var setInterval = setInterval(showSlide, 5000);
+  
+  function showSlide() {
+    slides[currentSlide].className = 'slider__wrapper';
+    currentSlide = (currentSlide + 1)%slides.length;
+    slides[currentSlide].className = 'slider__wrapper slider__wrapper--active';
+  }
+  
+  document.querySelector('.header__arrows--left').addEventListener('click', pressLeftArrow);
+  document.querySelector('.header__arrows--right').addEventListener('click', pressRightArrow);
+  
+  function pressLeftArrow () {
+    slides[currentSlide].className = 'slider__wrapper';
+    currentSlide = (currentSlide - 1)%slides.length;
+    if (currentSlide === -1) {
+      currentSlide = slides.length-1;
+    }
+    slides[currentSlide].className = 'slider__wrapper slider__wrapper--active';
+  }
+  function pressRightArrow () {
+     showSlide();
+  }
+  
+  
+  
+</script>
+    
+</html>
